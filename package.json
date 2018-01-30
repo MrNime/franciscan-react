@@ -1,6 +1,7 @@
 {
   "name": "franciscan-university-react",
-  "description": "The main website for Franciscan University of Steubenville. Built with React, NextJS, and MaterialUI.",
+  "description":
+    "The main website for Franciscan University of Steubenville. Built with React, NextJS, and MaterialUI.",
   "version": "1.0.0",
   "author": "Jesse Weigel <jesseweigel@gmail.com>",
   "dependencies": {
@@ -21,17 +22,17 @@
     "react-dom": "^16.2.0",
     "react-masonry-component": "^6.0.2"
   },
-  "keywords": [
-    "next"
-  ],
+  "keywords": ["next"],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+    "format":
+      "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "cm": "git-cz",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
     "precommit": "lint-staged && npm run test",
     "unit": "jest test.js",
     "e2e": "mocha --timeout 30000 ./e2e/runner.js ./e2e/tests/*.spec.js",
@@ -69,9 +70,7 @@
     ]
   },
   "jest": {
-    "setupFiles": [
-      "<rootDir>/shim.js"
-    ]
+    "setupFiles": ["<rootDir>/shim.js"]
   },
   "config": {
     "commitizen": {
