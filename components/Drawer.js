@@ -75,7 +75,7 @@ class TemporaryDrawer extends Component {
   }
 
   handleSearch = () => {
-    if (this.state.search !== '') {
+    if (this.state.search.trim() !== '') {
       Router.push({
         pathname: '/search',
         query: { search: this.state.search }
